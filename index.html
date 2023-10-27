@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+
+    <!-- Google Font用のlink -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant:wght@500&family=Roboto:wght@300&display=swap"
+        rel="stylesheet">
+    <!-- font-family: 'Cormorant', serif;
+         font-family: 'Roboto', sans-serif; -->
+    <title>Once Again</title>
+    <link rel="shortcut icon" href="./img/foricon.001.png">
+    <meta name="robots" content="noindex">
+</head>
+
+<body>
+    <!-- ヘッダー menu/1.once again 2.my place 3.explore 4.profile -->
+    <header>
+        <div class="logowraper">
+            <img src="img/once again logo.jpeg" id="logo">
+        </div>
+        <div class="iconwraper">
+            <a href="#"><img src="img/once again logo bw.001.png" id="onceagain"></a>
+            <a href="#"><img src="img/myplace.png" id="myplace"></a>
+            <a href="#"><img src="img/explore.png" id="explore"></a>
+            <a href="#"><img src="img/profile.png" id="profile"></a>
+        </div>
+    </header>
+
+    <!-- メインコンテンツ -->
+    <main>
+        <!-- 写真保存をする枠 -->
+        <div class="container">
+            <div class="title">
+                <h1>My place</h1>
+                <p><label>Enter the place you reccomend or hope to visit again. <input required type="text" id="key" value=""
+                            required placeholder="Your favorite place"></label></p>
+                <p><label>Enter the town where the place you entered is located. <input required type="text" id="value" value=""
+                            required placeholder="Town name"></label></p>
+                <button type="submit" id="save">Save</button>
+            </div>
+            <h1>History</h1>
+            <div class="listwraper">
+                <table id="title">
+                    <thead>
+                        <tr>
+                            <th>Favorite place</th>
+                            <th>Name of the town</th>
+                        </tr>
+                    </thead>
+                    <tbody id="list">
+                    </tbody>
+                </table>
+                <button type="submit" id="clear">Clear</button>
+            </div>
+        </div>
+    </main>
+
+    <!-- フッター -->
+    <footer>
+        &copy; 2023 Senan Kataoka All Rights Reserved
+    </footer>
+
+    <!-- jqueryの読み込み -->
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"
+        integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+
+    <!-- jsの外部参照 -->
+    <script src="js/script.js"></script>
+</body>
+
+</html>
